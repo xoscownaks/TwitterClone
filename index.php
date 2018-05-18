@@ -65,7 +65,7 @@ require_once "./php/mydb.php";
             }else{
                 
                 
-                echo '<form method="POST" action="./php/inputNewPost.php" accept-charset="UTF-8">';
+                echo '<form method="POST" action="php/inputNewPost.php" accept-charset="UTF-8">';
                     echo '<div class="form-group">';
                         echo '<textarea class="form-control" rows="5" name="content" cols="50"></textarea>';
                     echo '</div>';

@@ -36,8 +36,7 @@ require_once "mydb.php";
             $id = $stt->fetch();
             
             $_SESSION['user_name']  = $user_name;
-            $_SESSION['user_id']    = $id;
-            
+            $_SESSION['user_id']    = $id['id'];
             print "<script>location.replace('../index.php')</script>";
         }else{
             echo "<script>alert('The email has already been taken.')</script>";

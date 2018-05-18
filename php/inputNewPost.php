@@ -4,6 +4,7 @@ require_once "mydb.php";
 
     $user_id = $_SESSION['user_id'];
     $content = $_POST['content'];
+
     
     $pdo = db_connect();
     $sql = "INSERT INTO posts(user_id, post) VALUES(:user_id, :post)";
